@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #808080;
+  --tertiary-color: #d1001c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color:var(--tertiary-color);
+  font-family: Helvetica, Ariel, sans-serif;
+}
+
+/* Header & Nav Styles Start */
+
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 7px 0;
+  padding: 10px 20px 10px 70px;
+  font-weight: bold;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: var(--tertiary-color);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: auto 10px;
+}
+
+header nav ul {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-size: 1.5vw;
+  border-bottom: 3px solid transparent;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px solid var(--tertiary-color);
+}
+ /* TODO: add active button style */
+
+ /* TODO: footer */
+
+.hero {
+  background-image: url(../images/hero-bg.JPG);
+  background-size: 100%;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hero-subtitle {
+  margin: 10% 40px 20px 0;
+  background: var(--tertiary-color);
+  color: #ffffff;
+  padding: 8px;
+}
+
+.hero-subtitle h2 {
+  font-size: 32px;
+}
+
+/* End Hero */
