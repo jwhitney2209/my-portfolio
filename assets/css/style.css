@@ -99,7 +99,12 @@ header nav ul li a:hover {
 .section-title {
   font-size: 40px;
   padding: 0 20px;
-  margin: 30px auto 35px 0;
+  margin: 30px 20px 35px 20px;
+  text-align: right;
+}
+
+.secondary-border {
+  border-right: 3px solid;
 }
 
 .content {
@@ -111,13 +116,16 @@ header nav ul li a:hover {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
+.row h2 {
+  width: 300px;
+
+}
 .row-info {
   flex: 1 0 0;
-  border-left: 3px solid;
   padding: 10px;
   margin: 30px 30px 30px 0;
   width: 100%;
 }
+
