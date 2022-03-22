@@ -1,90 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Jason Whitney's Portfolio</title>
-  </head>
-  <body>
-    <!-- nav tags -->
-    <header>
-      <h1><a href="/index.html">Jason's Portfolio</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#about-me">About Me</a></li>
-          <li><a href="#my-work">My Work</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- end navigation -->
 
-    <!-- hero/jumbotron -->
-    <section class="hero">
-      <div class="hero-subtitle">
-        <h2>Welcome to My Website!</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="https://jenil.github.io/bulmaswatch/superhero/bulmaswatch.min.css">
+  <link ref="stylesheet" href="./assets/css/style.css">
+  <title>Dev Jason</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar container" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMain" class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item">
+          Home
+        </a>
+        <a class="navbar-item">
+          About Me
+        </a>
+        <a class="navbar-item">
+          Projects
+        </a>
       </div>
-    </section>
-    <!-- end header -->
-
-    <!-- about me -->
-    <section id="about-me" class="content">
-      <div class="row">
-        <h2 class="section-title secondary-border">About Me</h2>
-        <div class="row-info">
-          <div class="bio-text">
-            <p>
-            <strong>Male - 31 - Husband - Gamer - Dog Lover - Musician</strong>
-            <br />
-            Beginner coding and programming developer. Let's make your next project sing! 
-            </p>
-          </div>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="hero container is-dark">
+    <div class="has-text-centered">
+      <figure class="image is-inline-block">
+        <img src="./assets/images/headshot.png">
+      </figure>
+    </div>
+    <div class="hero-body has-text-centered">
+      <p class="title is-2">
+        dev.Jason
+      </p>
+      <p class="subtitle is-6">
+        Dream It. Develop It.
+      </p>
+    </div>
+  </section>
+  <!-- About Me -->
+  <section class="section container has-text-centered">
+    <div class="content">
+      <h1 class="title">About Me</h1>
+      <p class="subtitle is-6">
+        Welcome to my website! My name is Jason and I am currently in the beginning stages of my software development
+        journey. I currently live at home with my wife and my dog. I love playing video games as well as producing music.
+        I love helping others create and I believe that through software development, I can help change the world!
+      </p>
+    </div>
+  </section>
+  <!-- Projects -->
+  <section class="section container has-text-centered has-background-light">
+    <div class="content">
+      <h1 class="title has-text-dark">My Projects</h1>
+    </div>
+    <!-- Event Seeker -->
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <p class="title is-4">Event Seeker
+            <span class="tag">HTML</span>
+            <span class="tag">Bulma</span>
+            <span class="tag">Javascript</span>
+            <span class="tag">jQuery</span>
+            <span class="tag">Moment.js</span>
+            <span class="tag">Server API</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button is-small is-info"><a href="https://github.com/jwhitney2209/event-seeker" target="_blank">Github</a></button>
+          <button class="button is-small is-primary"><a href="https://jwhitney2209.github.io/event-seeker/" target="_blank">Deployed Application</a></button>
         </div>
       </div>
-    </section>
-    <!-- end about me -->
-
-    <!-- my works -->
-  <section id="my-works" class="content">
-    <div class="row">
-      <h2 class="section-title secondary-border">My Works</h2>
-      <div class="projects">
-        <section class="proj-img run-buddy" id="run-buddy">
-          <h3>Run Buddy</h3>
-          <a href="https://jwhitney2209.github.io/run-buddy/" target="_blank">
-          <img src="./assets/images/run-buddy.jpg" alt="run buddy">
-          </a>
-        </section>
-        <section class="proj-img">
-          <h3>Password Generator
-          </h3>
-          <img src="./assets/images/placeholder.jpg" alt="password generator">
-        </section>
-        <section class="proj-img">
-          <h3>Future Project</h3>
-          <img src="./assets/images/placeholder.jpg" alt="run buddy">
-        </section>
+    </div>
+    <!-- Weather Dashboard -->
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <p class="title is-4">Weather Dashboard
+            <span class="tag">HTML</span>
+            <span class="tag">Bulma</span>
+            <span class="tag">Javascript</span>
+            <span class="tag">Moment.js</span>
+            <span class="tag">Server API</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button is-small is-info"><a href="https://github.com/jwhitney2209/weather-dashboard" target="_blank">Github</a></button>
+          <button class="button is-small is-primary"><a href="https://jwhitney2209.github.io/weather-dashboard/" target="_blank">Deployed Application</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- Quiz Yourself  -->
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <p class="title is-4">Quiz Yourself
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Moment.js</span>
+            <span class="tag">Javascript</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button is-small is-info"><a href="https://github.com/jwhitney2209/quiz-yourself" target="_blank">Github</a></button>
+          <button class="button is-small is-primary"><a href="https://jwhitney2209.github.io/quiz-yourself/" target="_blank">Deployed Application</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- Password Generator  -->
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <p class="title is-4">Password Generator
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Javascript</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button is-small is-info"><a href="https://github.com/jwhitney2209/password-generator" target="_blank">Github</a></button>
+          <button class="button is-small is-primary"><a href="https://jwhitney2209.github.io/password-generator/" target="_blank">Deployed Application</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- Run Buddy Card -->
+    <div class="card">
+      <div class="card-content">
+        <div class="media">
+          <p class="title is-4">Run Buddy
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </p>
+        </div>
+        <div class="buttons">
+          <button class="button is-small is-info"><a href="https://github.com/jwhitney2209/run-buddy" target="_blank">Github</a></button>
+          <button class="button is-small is-primary"><a href="https://jwhitney2209.github.io/run-buddy/" target="_blank">Deployed Application</a></button>
+        </div>
       </div>
     </div>
   </section>
-    <!-- end works -->
+  <!-- Contact Me -->
+  <section class="section container has-text-centered">
+    <div class="content">
+      <h1 class="title">Contact Me</h1>
+      <button class="button is-warning"><a href="mailto:jwhitney.2209@icloud.com">email</a></button>
+      <button class="button is-warning"><a href="https://github.com/jwhitney2209">Github</a></button>
+    </div>
 
-    <!-- contact info -->
-    <section id="contact-me" class="content">
-      <div class="row">
-        <h2 class="section-title secondary-border">Contact Me</h2>
-        <div class="row-info">
-          <div class="contact-info">
-            <ul>
-              <li><strong>P: 956.778.4945</strong></li>
-              <li><strong><a href="mailto:jwhitney.2209@icloud.com">jwhitney.2209@icloud.com</a></strong></li>
-              <li><strong><a href="https://github.com/jwhitney2209" target="_blank">Github</a></strong></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end contact info -->
-  </body>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Website</strong> by Jason Whitney<br>
+        Styled with <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
